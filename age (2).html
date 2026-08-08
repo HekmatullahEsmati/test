@@ -1,0 +1,29 @@
+<script>
+
+    let d = new Date()
+    document.writeln(d)
+
+
+    document.writeln(`<br>year: ${d.getFullYear()}`)
+    document.writeln(`<br>date: ${d.getDate()}`)
+    document.writeln(`<br>Month: ${d.getMonth()}`)
+
+    // set date
+
+    let dob = new Date(2001,1,2)
+    dob.setFullYear(2009)
+    dob.setHours(16)
+    dob.setMinutes(23)
+    dob.setSeconds(34)
+    document.writeln(`<br> DOB is : ${dob}`)
+
+    // finding age form date of brith
+    let db1 = new Date(2003,7,14)
+    let d1 = new Date() // current date
+    let diff = d1-db1
+    let age = diff/(1000*60*60*24*365)
+
+    document.writeln(`<h1>${age} </h1>`)
+
+
+</script>
